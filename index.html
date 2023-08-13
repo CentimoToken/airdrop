@@ -1,19 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centimo Airdrop</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
   <script src="air.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .card-subtitle {
+      color: #6c757d;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 200px;
+    margin: auto;
+}
+    .card-body {
+      padding: 20px;
+    }
+    .mt-4 {
+      margin-top: 1.5rem;
+    }
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .transactions {
+      margin-top: 40px;
+    }
+    .transaction {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .transaction hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 0.5rem 0;
+    }
+    .transaction p {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <div class="card">
+          <img src="https://i.imgur.com/DJUp7Up.png" alt="Centimo Logo" class="card-img-top">
           <div class="card-body">
-            <h1 class="card-title text-center mb-4">Welcome to Centimo Airdrop!</h1>
-            <h5 style="text-align:center"><a href="https://polygonscan.com/token/0x77ce9c45bbd011c11bea983daba7ccffea1e5f70">0x77ce9c45bbD011C11BEA983DaBA7Ccffea1e5f70</a></h5>
+            <h1 class="card-title text-center">Welcome to Centimo Distribution</h1>
+            <h5 class="card-subtitle text-center"><a href="https://polygonscan.com/token/0x77ce9c45bbd011c11bea983daba7ccffea1e5f70">0x77ce9c45bbD011C11BEA983DaBA7Ccffea1e5f70</a></h5>
             <div class="text-center mt-4">
               <button class="btn btn-primary btn-lg" id="claim-button">Claim Centimo Tokens</button>
             </div>
@@ -37,11 +113,9 @@
               <div class="col-md-4">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title text-center mb-3">Centimo Token Details</h5>
-					 <div class="text-center">
-                      <img src="https://i.imgur.com/DJUp7Up.png" alt="Centimo Logo" class="img-fluid" style="max-width: 100px;">
-                    </div>
-                    <p class="card-text">Ticker: Centimo</p>
+                    <h5 class="card-title text-center mb-3">Centimo Token </h5>
+				
+                    <p class="card-text">Ticker:  <img src="https://i.imgur.com/DJUp7Up.png" alt="Centimo Logo" class="img-fluid" style="max-width: 50px;">Centimo</p>
                     <p class="card-text">Symbol: CENT</p>
                     <p class="card-text">Total Supply: 1,000,000</p>
                    
@@ -101,6 +175,9 @@
             padding: 0;
         }
     </style>
+	  </div>
+  </div>
+
     <script>
         const tokenAddress = '0x77ce9c45bbd011c11bea983daba7ccffea1e5f70';
         const apiKey = 'ZWQSJ5HBJVGDFJC2UQKFBFUS1SZWD11ISZ';
@@ -143,5 +220,231 @@
         fetchTransactions();
         setInterval(fetchTransactions, 1000);
     </script>
+	
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centimo Airdrop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+  <script src="air.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .card-subtitle {
+      color: #6c757d;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 200px;
+    margin: auto;
+}
+    .card-body {
+      padding: 20px;
+    }
+    .mt-4 {
+      margin-top: 1.5rem;
+    }
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .transactions {
+      margin-top: 40px;
+    }
+    .transaction {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .transaction hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 0.5rem 0;
+    }
+    .transaction p {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card">
+          <img src="https://i.imgur.com/DJUp7Up.png" alt="Centimo Logo" class="card-img-top">
+          <div class="card-body">
+            <h1 class="card-title text-center">Welcome to Centimo Distribution</h1>
+            <h5 class="card-subtitle text-center"><a href="https://polygonscan.com/token/0x77ce9c45bbd011c11bea983daba7ccffea1e5f70">0x77ce9c45bbD011C11BEA983DaBA7Ccffea1e5f70</a></h5>
+            <div class="text-center mt-4">
+              <button class="btn btn-primary btn-lg" id="claim-button">Claim Centimo Tokens</button>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="https://i.imgur.com/ObqtHSZ.jpg" alt="Centimo Gaming Asset" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Centimo Gaming Asset</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="https://i.imgur.com/XGJgRVQ.jpg" alt="Centimo NFT" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Centimo NFT</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title text-center mb-3">Centimo Token </h5>
+				
+                    <p class="card-text">Ticker:  <img src="https://i.imgur.com/DJUp7Up.png" alt="Centimo Logo" class="img-fluid" style="max-width: 50px;">Centimo</p>
+                    <p class="card-text">Symbol: CENT</p>
+                    <p class="card-text">Total Supply: 1,000,000</p>
+                   
+                    <div class="text-center mt-3">
+                      <a target="blank"href="https://centimo.johnnypardes.repl.co/" class="" target="_blank">Add to Metamask</a>
+                    </div>
+                    <div class="text-center mt-2">
+                      <a href="https://link.trustwallet.com/addAsset?token=0x77ce9c45bbD011C11BEA983DaBA7Ccffea1e5f70" target="_blank">Add to Trust Wallet</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text text-center mt-4">
+              Centimo is an innovative gaming asset and NFT token that brings a new dimension to your gaming experience. As a dedicated gamer, you understand the value of unique in-game items and collectibles. Centimo takes this concept to the next level by combining blockchain technology with the thrill of gaming. Similar to renowned tokens like Enjin, Centimo empowers gamers to truly own their in-game assets. Whether you're a competitive player, a casual gamer, or a passionate collector, Centimo's NFT tokens allow you to showcase, trade, and monetize your virtual possessions like never before. Don't miss out on the opportunity to claim your free Centimo tokens and become part of the future of gaming. Click the "Claim" button above to secure your share of this exciting new venture!
+            </p>
+          </div>
+		  
+		  
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+	<br><center>
+	<h2 style="text-align:center:">Transactions</h2>
+        <div id="transactions"></div>
+    </div>
+<style>
+
+
+        h1 {
+            margin: 0;
+        }
+
+    
+
+        .transaction {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    width: fit-content;
+    margin: 0 auto;
+}
+     
+        .transaction hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 0.5rem 0;
+        }
+
+        .transaction p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+	  </div>
+  </div>
+
+    <script>
+        const tokenAddress = '0x77ce9c45bbd011c11bea983daba7ccffea1e5f70';
+        const apiKey = 'ZWQSJ5HBJVGDFJC2UQKFBFUS1SZWD11ISZ';
+
+        async function fetchTransactions() {
+            try {
+                const response = await fetch(`https://api.polygonscan.com/api?module=account&action=tokentx&contractaddress=${tokenAddress}&apikey=${apiKey}`);
+                const data = await response.json();
+
+                if (data.status === '1') {
+                    const transactions = data.result;
+                    const transactionsDiv = document.getElementById('transactions');
+
+                    transactionsDiv.innerHTML = '';
+
+                    transactions.reverse();
+
+                    transactions.forEach(transaction => {
+                        const valueMATIC = parseFloat(transaction.value) / 10**8;
+
+                        const transactionElement = document.createElement('div');
+                        transactionElement.classList.add('transaction');
+                        transactionElement.innerHTML = `
+                            <p><strong>From:</strong> ${transaction.from}</p>
+                            <p><strong>To:</strong> ${transaction.to}</p>
+                            <p><strong>Value:</strong> ${valueMATIC.toFixed(8)} CENT</p>
+                            <p><strong>Transaction:</strong> <a href="https://polygonscan.com/tx/${transaction.hash}" target="_blank">View on PolygonScan</a></p>
+                            <hr>
+                        `;
+                        transactionsDiv.appendChild(transactionElement);
+                    });
+                } else {
+                    console.error('Error fetching transactions:', data.message);
+                }
+            } catch (error) {
+                console.error('Error fetching transactions:', error);
+            }
+        }
+
+        fetchTransactions();
+        setInterval(fetchTransactions, 1000);
+    </script>
+	
 </body>
 </html>
